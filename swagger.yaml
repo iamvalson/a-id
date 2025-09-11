@@ -1,0 +1,175 @@
+tags:
+  - name: auth
+    description: auth API
+  - name: users
+    description: users API
+
+paths:
+  # [POST] /auth/signup
+  /auth/signup:
+    post:
+      tags:
+        - auth
+      summary: Register User (Signup)
+      parameters:
+        - name: body
+          in: body
+          description: Signup Data
+          required: true
+          schema:
+            $ref: '#/definitions/users'
+      responses:
+        201:
+          description: 'User Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict (Email Exists)'
+        500:
+          description: 'Server Error'
+
+  # [POST] /auth/signin
+  /auth/signin:
+    post:
+      tags:
+        - auth
+      summary: Authenticate User (Signin)
+      parameters:
+        - name: body
+          in: body
+          description: Login Credentials
+          required: true
+          schema:
+            type: object
+            required:
+              - email
+              - password
+            properties:
+              email:
+                type: string
+                description: User Email
+              password:
+                type: string
+                description: User Password
+      responses:
+        200:
+          description: 'Authenticated Successfully'
+        400:
+          description: 'Bad Request'
+        401:
+          description: 'Unauthorized (Invalid Credentials)'
+        500:
+          description: 'Server Error'
+
+  # [GET] /users
+  /users:
+    get:
+      tags:
+        - users
+      summary: Find All Users
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+    post:
+      tags:
+        - users
+      summary: Add User
+      parameters:
+        - name: body
+          in: body
+          description: user Data
+          required: true
+          schema:
+            $ref: '#/definitions/users'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [GET, PUT, DELETE] /users/{id}
+  /users/{id}:
+    get:
+      tags:
+        - users
+      summary: Find User By Id
+      parameters:
+        - name: id
+          in: path
+          description: User Id
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+    put:
+      tags:
+        - users
+      summary: Update User By Id
+      parameters:
+        - name: id
+          in: path
+          description: user Id
+          required: true
+        - name: body
+          in: body
+          description: user Data
+          required: true
+          schema:
+            $ref: '#/definitions/users'
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+    delete:
+      tags:
+        - users
+      summary: Delete User By Id
+      parameters:
+        - name: id
+          in: path
+          description: user Id
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# definitions
+definitions:
+  users:
+    type: object
+    required:
+      - email
+      - password
+    properties:
+      email:
+        type: string
+        description: user Email
+      password:
+        type: string
+        description: user Password
+
+schemes:
+  - https
+  - http
