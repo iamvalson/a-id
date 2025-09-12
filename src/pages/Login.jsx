@@ -1,6 +1,7 @@
 import { TriangleAlert } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 
 const LoginForm = () => {
@@ -55,6 +56,7 @@ const SignupForm = () => {
   const navigate = useNavigate()
 
   return(  <form className="space-y-6 w-full max-w-xs">
+    <Navbar />
     <div className="space-y-1">
       <label className="block text-sm font-medium text-gray-700">Full Name</label>
       <input

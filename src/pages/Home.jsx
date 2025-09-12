@@ -11,8 +11,7 @@ const Home = () => {
         // navigate("/auth")
     }, [])
     return (
-        <div className="w-screen min-h-screen bg-gradient from-secondary/30 to-white flex flex-col pt-4 px-2">
-            
+        <div className="w-screen min-h-screen bg-white flex flex-col pt-4 px-2">
             <Navbar />
             <section className="flex flex-col gap-4">
                 <div className="flex gap-2 items-center">
