@@ -1,68 +1,185 @@
 import { TriangleAlert } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const LoginForm = () => (
-    <form className="space-y-4 flex flex-col w-full items-center">
-        <div className="w-full">
-            <label>Email</label>
-            <input type="email" placeholder="youreamil@ymail.com" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        </div>
-        <div>
-            <label>Password</label>
-            <input type="password" placeholder="Password" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        </div>
-        <div className="self-start flex items-center gap-2">
-            <input type="checkbox" className="accent-secondary  size-4" />
-            Remember me
-        </div>
-        <button type="submit" className=" w-auto px-10 py-2 bg-primary text-white font-semibold rounded-full hover:bg-indigo-700 transition duration-300">Login</button>
-    </form>
-);
 
-const SignupForm = () => (
-    <form className="space-y-4">
-        <input type="text" placeholder="Full Name" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <input type="password" placeholder="Password" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <button type="submit" className="w-full p-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300">Sign Up</button>
-        <div>
-            <input type="checkbox" />
+const LoginForm = () => {
+  const navigate = useNavigate()
+  return (
+    <form className="space-y-6 w-full max-w-xs">
+      <div className="space-y-1">
+        <label className="block text-sm font-medium text-gray-700">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        />
+      </div>
+      <div className="space-y-1">
+        <label className="block text-sm font-medium text-gray-700">Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        />
+      </div>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center">
+          <input
+            id="remember-me"
+            type="checkbox"
+            className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+          />
+          <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
             Remember me
+          </label>
         </div>
+        <a href="#" className="text-sm font-medium text-primary hover:text-primary/80">
+          Forgot password?
+        </a>
+      </div>
+      <button
+        type="submit"
+        className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-secondary hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
+        onClick = {() => {
+          navigate("/")
+        }}
+      >
+        Login
+      </button>
     </form>
-);
+  )
+};
+
+const SignupForm = () => {
+  const navigate = useNavigate()
+
+  return(  <form className="space-y-6 w-full max-w-xs">
+    <div className="space-y-1">
+      <label className="block text-sm font-medium text-gray-700">Full Name</label>
+      <input
+        type="text"
+        placeholder="Enter your full name"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      />
+    </div>
+    <div className="space-y-1">
+      <label className="block text-sm font-medium text-gray-700">Email</label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      />
+    </div>
+    <div className="space-y-1">
+      <label className="block text-sm font-medium text-gray-700">Password</label>
+      <input
+        type="password"
+        placeholder="Create a password"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      />
+    </div>
+    <div className="space-y-1">
+      <label className="block text-sm font-medium text-gray-700">Confirm Password</label>
+      <input
+        type="password"
+        placeholder="Confirm your password"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      />
+    </div>
+    <div className="flex items-center">
+      <input
+        id="terms"
+        type="checkbox"
+        className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+      />
+      <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
+        I agree to the <a href="#" className="text-primary hover:text-primary/80">Terms</a> and <a href="#" className="text-primary hover:text-primary/80">Privacy Policy</a>
+      </label>
+    </div>
+    <button
+      type="submit"
+            onClick = {() => {
+          navigate("/")
+        }}
+      className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-secondary hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
+    >
+      Create Acount
+    </button>
+  </form> )
+};
 
 const Login = () => {
-    const mode = useState("login")
+  const [mode, setMode] = useState("login");
 
-    return (
-        <div className="flex flex-center w-screen h-screen bg-gradient-to-t from-primary via-white to-secondary bg-opacity-20">
-            <section className="flex flex-center flex-col gap-2 max-w-xs mx-auto -mt-18">
-
-                <h2 className="text-4xl font-bold mb-10">
-                    <span className="text-secondary">Ai</span>
-                    <span className="text-primary">-d</span>
-                </h2>
-
-                <div className="mb-2">
-                    <div className="flex flex-center p-2 bg-gray-00 rounded-full">
-                        <button className="bg-primary/10 text-gray-700 font-semibold px-5 py-2 rounded-l-full">Login</button>
-                        <button className="bg-primary/10 text-gray-700 font-semibold px-5 py-2 rounded-r-full">SignUp</button>
-                    </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-t fron-white to-lightblue flex flex-col justify-between pb-32">
+      <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <img
+            className="mx-auto h-16 w-auto"
+            src="./src/assets/mini_logo.png"
+            alt="Logo"
+          />
+          <h2 className="mt-6 text-center text-2xl font-extrabold text-gray-900">
+            {mode === "login" ?
+              (
+                <div>
+                  <span className="text-secondary">Log </span>
+                  <span className="text-primary">In</span>
                 </div>
-
-                <LoginForm />
-
-                <div className="absolute bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-primary/10 rounded-t-5xl w-screen ">
-                    <span className="font-bold text-primary">IT'S AN EMERGENCY !</span>
-                    <button className="flex gap-1 w-auto px-8 py-2 bg-white outline-1 outline-primary text-primary font-semibold rounded-full hover:scale-105s transition duration-300">
-                        <TriangleAlert className="color-primary inline" />
-                        It's an emergency!
-                    </button>
+              )
+              :
+              (
+                <div>
+                  <span className="text-secondary">Create </span>
+                  <span className="text-primary">Account</span>
                 </div>
-            </section >
+              )
+            }
+          </h2>
         </div>
-    )
+
+        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="py-2 px-4 sm:rounded-lg sm:px-10">
+            <div className="flex mb-6 rounded-full p-1 bg-gray-100">
+              <button
+                onClick={() => setMode("login")}
+                className={`flex-1 py-2 rounded-full text-sm font-medium ${mode === "login" ? 'bg-lightblue shadow text-primary' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                Login
+              </button>
+              <button
+                onClick={() => setMode("signup")}
+
+                className={`flex-1 py-2 rounded-full text-sm font-medium ${mode === "signup" ? 'bg-lightblue shadow text-primary' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                Sign Up
+              </button>
+            </div>
+
+            {
+              {
+                login: <LoginForm />,
+                signup: <SignupForm />,
+              }[mode]
+            }
+
+
+          </div >
+        </div>
+      </div>
+
+      <div className="fixed bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-primary/30 rounded-t-5xl w-screen ">
+        <span className="font-bold text-primary">IT'S AN EMERGENCY !</span>
+        <button className="flex gap-1 w-auto px-8 py-2 bg-white outline-1 outline-primary text-primary font-semibold rounded-full hover:scale-105s transition duration-300">
+          <TriangleAlert className="color-primary inline" />
+          It's an emergency!
+        </button>
+      </div>
+    </div>
+
+  )
 }
 
 export default Login;
