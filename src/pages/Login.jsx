@@ -15,7 +15,7 @@ const LoginForm = () => (
             <input type="checkbox" className="accent-secondary  size-4" />
             Remember me
         </div>
-        <button type="submit" className=" w-auto px-10 py-2 bg-red-600 text-white font-semibold rounded-full hover:bg-indigo-700 transition duration-300">Login</button>
+        <button type="submit" className=" w-auto px-10 py-2 bg-primary text-white font-semibold rounded-full hover:bg-indigo-700 transition duration-300">Login</button>
     </form>
 );
 
@@ -36,12 +36,12 @@ const Login = () => {
     const mode = useState("login")
 
     return (
-        <div className="flex flex-center w-screen h-screen bg-white">
+        <div className="flex flex-center w-screen h-screen bg-gradient-to-t from-primary via-white to-secondary bg-opacity-20">
             <section className="flex flex-center flex-col gap-2 max-w-xs mx-auto -mt-18">
 
                 <h2 className="text-4xl font-bold mb-10">
-                    <span className="text-blue-600">Know</span>
-                    <span className="text-red-600">FirstAid</span>
+                    <span className="text-secondary">Ai</span>
+                    <span className="text-primary">-d</span>
                 </h2>
 
                 <div className="mb-2">
@@ -53,7 +53,7 @@ const Login = () => {
 
                 <LoginForm />
 
-                <div className="absolute bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-red-600/10 rounded-t-5xl w-screen ">
+                <div className="absolute bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-primary/10 rounded-t-5xl w-screen ">
                     <span className="font-bold text-primary">IT'S AN EMERGENCY !</span>
                     <button className="flex gap-1 w-auto px-8 py-2 bg-white outline-1 outline-primary text-primary font-semibold rounded-full hover:scale-105s transition duration-300">
                         <TriangleAlert className="color-primary inline" />
