@@ -10,6 +10,7 @@ import App from './App.jsx'
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx';
 import Main from './pages/Main.jsx';
+import Query from './pages/Query.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/auth",
         element: <Login />,
+      },
+      {
+        path: "/query",
+        element: <Query />,
       },
       {
         path: "/",

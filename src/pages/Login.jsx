@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
+
 const LoginForm = () => {
   const navigate = useNavigate()
   return (
@@ -24,7 +25,10 @@ const LoginForm = () => {
           className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
         />
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-2 -mt-4">
+        <a href="#" className="text-sm font-medium self-end text-primary hover:text-primary/80">
+          Forgot password?
+        </a>
         <div className="flex items-center">
           <input
             id="remember-me"
@@ -35,14 +39,11 @@ const LoginForm = () => {
             Remember me
           </label>
         </div>
-        <a href="#" className="text-sm font-medium text-primary hover:text-primary/80">
-          Forgot password?
-        </a>
       </div>
       <button
         type="submit"
         className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-secondary hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
-        onClick = {() => {
+        onClick={() => {
           navigate("/")
         }}
       >
@@ -55,8 +56,7 @@ const LoginForm = () => {
 const SignupForm = () => {
   const navigate = useNavigate()
 
-  return(  <form className="space-y-6 w-full max-w-xs">
-    <Navbar />
+  return (<form className="space-y-6 w-full max-w-xs">
     <div className="space-y-1">
       <label className="block text-sm font-medium text-gray-700">Full Name</label>
       <input
@@ -101,21 +101,21 @@ const SignupForm = () => {
     </div>
     <button
       type="submit"
-            onClick = {() => {
-          navigate("/")
-        }}
+      onClick={() => {
+        navigate("/")
+      }}
       className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-secondary hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
     >
       Create Acount
     </button>
-  </form> )
+  </form>)
 };
 
 const Login = () => {
   const [mode, setMode] = useState("login");
 
   return (
-    <div className="min-h-screen bg-gradient-to-t fron-white to-lightblue flex flex-col justify-between pb-32">
+    <div className="min-h-screen bg-gradient-to-t fron-white to-lightblue flex flex-col justify-between">
       <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
@@ -172,7 +172,7 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-primary/30 rounded-t-5xl w-screen ">
+      <div className=" bottom-0 flex flex-col gap-2 flex-center pt-6 pb-8 bg-primary/40 rounded-t-5xl w-screen ">
         <span className="font-bold text-primary">IT'S AN EMERGENCY !</span>
         <button className="flex gap-1 w-auto px-8 py-2 bg-white outline-1 outline-primary text-primary font-semibold rounded-full hover:scale-105s transition duration-300">
           <TriangleAlert className="color-primary inline" />

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "burns",
+    "title": "Burns",
+    "description": "Caused by fire, hot objects or steam.",
+    "progress": 100,
+    "cardImage": "./src/assets/tut/burns.jpg",
+    "tutorial_content": {
+      "headline": "First Aid for Burns",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Stop the Burning",
+          "details": "Remove the person from the source of the heat. For scalds, remove any clothing that retains heat, but do not remove clothing stuck to the skin. If it's an electrical burn, ensure the power is off first.",
+          "image": "https://example.com/tutorials/burns_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Cool the Burn",
+          "details": "Hold the affected area under cool (not cold or icy) running water for at least 20 minutes. This helps to remove heat and prevent further damage. Do not use ice, butter, or ointments.",
+          "image": "https://example.com/tutorials/burns_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Cover the Area",
+          "details": "Gently cover the burn with a clean, non-fluffy dressing or a clean cloth. Cling film is a good option. Do not use adhesive dressings. If blisters appear, do not pop them.",
+          "image": "https://example.com/tutorials/burns_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Seek Medical Help",
+          "details": "If the burn is large, deep, on a major joint, the face, hands, or genitals, or if you are in any doubt about its severity, seek immediate medical attention. Keep the person warm and monitor for signs of shock.",
+          "image": "https://example.com/tutorials/burns_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cuts_and_bleeding",
+    "title": "Cuts & Bleeding",
+    "description": "Sharp objects, accidents in kitchen or outdoors.",
+    "progress": 50,
+    "cardImage": "./src/assets/tut/cut.jpg",
+    "tutorial_content": {
+      "headline": "First Aid for Cuts & Bleeding",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Stop the Bleeding",
+          "details": "Apply firm, direct pressure to the wound with a clean cloth or sterile bandage. If blood soaks through, add another layer on top and continue to apply pressure. If possible, raise the injured limb above the heart.",
+          "image": "https://example.com/tutorials/cuts_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Clean the Wound",
+          "details": "Once the bleeding has stopped, gently clean the cut with soap and warm water. Avoid using hydrogen peroxide or iodine, as they can damage tissue. Pat the area dry with a clean cloth.",
+          "image": "https://example.com/tutorials/cuts_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Protect and Dress",
+          "details": "Apply an antibiotic ointment to reduce the risk of infection. Cover the wound with a sterile bandage or dressing to keep it clean. Change the bandage daily.",
+          "image": "https://example.com/tutorials/cuts_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "When to Seek a Doctor",
+          "details": "Seek medical attention if the wound is deep, has jagged edges, won't stop bleeding after 10 minutes of pressure, or shows signs of infection like increasing redness, swelling, or pus.",
+          "image": "https://example.com/tutorials/cuts_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "choking",
+    "title": "Choking",
+    "description": "Food or objects blocking airway.",
+    "progress": 0,
+    "cardImage": "./src/assets/tut/choking.jpg",
+    "tutorial_content": {
+      "headline": "First Aid for Choking (Adult)",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Assess the Situation",
+          "details": "If the person is coughing or can speak, encourage them to keep coughing to dislodge the object. If they cannot cough, speak, or breathe, you need to intervene immediately. Call emergency services.",
+          "image": "https://example.com/tutorials/choking_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Perform Back Blows",
+          "details": "Stand to the side and slightly behind the person. Support their chest with one hand and lean them forward. Use the heel of your other hand to give up to five sharp blows between their shoulder blades.",
+          "image": "https://example.com/tutorials/choking_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Perform Abdominal Thrusts (Heimlich Maneuver)",
+          "details": "If the back blows are unsuccessful, stand behind the person and wrap your arms around their waist. Make a fist with one hand and place it just above their navel. Grasp your fist with your other hand and give five quick, inward and upward thrusts.",
+          "image": "https://example.com/tutorials/choking_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Repeat and Reassess",
+          "details": "Continue alternating between five back blows and five abdominal thrusts until the object is dislodged, help arrives, or the person becomes unconscious. If they become unconscious, begin CPR.",
+          "image": "https://example.com/tutorials/choking_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nosebleeds",
+    "title": "Nosebleeds",
+    "description": "Injury, dry air, or sudden pressure changes.",
+    "progress": 100,
+    "cardImage": "./src/assets/tut/nosebleed.jpg",
+    "tutorial_content": {
+      "headline": "First Aid for Nosebleeds",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Position Correctly",
+          "details": "Sit upright and lean forward slightly. This prevents blood from flowing down the back of the throat, which can cause gagging or vomiting. Breathe through your mouth.",
+          "image": "https://example.com/tutorials/nosebleeds_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Apply Pressure",
+          "details": "Using your thumb and index finger, firmly pinch the soft part of your nose just below the bony bridge. Apply continuous pressure for 10 minutes. Do not release the pressure to check if the bleeding has stopped.",
+          "image": "https://example.com/tutorials/nosebleeds_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Apply a Cold Compress",
+          "details": "While pinching, you can apply a cold compress or a bag of ice to the bridge of the nose. This can help constrict blood vessels and slow the bleeding.",
+          "image": "https://example.com/tutorials/nosebleeds_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "After the Bleeding Stops",
+          "details": "Once the bleeding has stopped, avoid blowing your nose, bending over, or strenuous activity for a few hours. This helps prevent the bleeding from starting again.",
+          "image": "https://example.com/tutorials/nosebleeds_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sprains_and_strains",
+    "title": "Sprains & Strains",
+    "description": "Falls, twisting, or overuse.",
+    "progress": 25,
+    "cardImage": "./src/assets/tut/sprain.jpg",
+    "tutorial_content": {
+      "headline": "First Aid for Sprains & Strains (R.I.C.E.)",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Rest",
+          "details": "Immediately stop the activity that caused the injury and rest the affected joint or muscle. Do not put weight on it or use it for at least 24-48 hours.",
+          "image": "https://example.com/tutorials/sprains_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Ice",
+          "details": "Apply a cold pack or ice wrapped in a cloth to the injured area. Do this for 15-20 minutes every 2-3 hours for the first 24-48 hours. This reduces swelling and pain.",
+          "image": "https://example.com/tutorials/sprains_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Compression",
+          "details": "Gently wrap the injured area with an elastic bandage. Make sure it is snug but not too tight, as this can cut off circulation. This helps to reduce swelling.",
+          "image": "https://example.com/tutorials/sprains_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Elevation",
+          "details": "Elevate the injured limb above the level of the heart as much as possible. This also helps to minimize swelling.",
+          "image": "https://example.com/tutorials/sprains_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cpr",
+    "title": "CPR",
+    "description": "Used in cardiac arrest or unconsciousness.",
+    "progress": 75,
+    "cardImage": "./src/assets/tut/cpr.jpg",
+    "tutorial_content": {
+      "headline": "CPR (Hands-Only for Adults)",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Check for Responsiveness",
+          "details": "Tap the person's shoulder and shout, 'Are you okay?' If they are unresponsive and not breathing normally (or not breathing at all), call for emergency help immediately.",
+          "image": "https://example.com/tutorials/cpr_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Position for Compressions",
+          "details": "Lay the person on their back on a firm, flat surface. Kneel beside their chest. Place the heel of one hand in the center of their chest, and place your other hand on top, interlocking your fingers.",
+          "image": "https://example.com/tutorials/cpr_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Perform Compressions",
+          "details": "Keeping your arms straight, use your body weight to push down hard and fast on their chest. Push at least 2 inches deep at a rate of 100-120 compressions per minute (to the beat of 'Stayin' Alive').",
+          "image": "https://example.com/tutorials/cpr_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Continue Compressions",
+          "details": "Continue to perform compressions without stopping until emergency medical services arrive or the person shows signs of life, such as breathing or movement.",
+          "image": "https://example.com/tutorials/cpr_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "allergic_reactions",
+    "title": "Allergic Reactions",
+    "description": "Caused by allergens from food, insects, or environment.",
+    "progress": 0,
+    "cardImage": "https://example.com/icons/allergic_reactions.png",
+    "tutorial_content": {
+      "headline": "First Aid for Allergic Reactions",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Identify the Symptoms",
+          "details": "Look for symptoms like hives, swelling, itching, difficulty breathing, wheezing, or a sudden drop in blood pressure. A severe, life-threatening reaction is called anaphylaxis.",
+          "image": "https://example.com/tutorials/allergic_reactions_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Call Emergency Services",
+          "details": "If the person is having trouble breathing, swallowing, or is showing signs of anaphylaxis, call emergency services immediately. Inform the operator of a potential allergic reaction.",
+          "image": "https://example.com/tutorials/allergic_reactions_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Use an EpiPen",
+          "details": "If the person has a prescribed epinephrine auto-injector (EpiPen), help them use it immediately. Remove the cap, press the orange tip against the outer thigh, and hold for 3 seconds. The person may need a second dose.",
+          "image": "https://example.com/tutorials/allergic_reactions_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Keep the Person Calm",
+          "details": "Help the person sit or lie down in a comfortable position. If they have difficulty breathing, allow them to sit up. If they feel dizzy or faint, have them lie on their back with their feet elevated. Loosen any tight clothing.",
+          "image": "https://example.com/tutorials/allergic_reactions_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fractures",
+    "title": "Fractures",
+    "description": "Bones broken due to impact or stress.",
+    "progress": 0,
+    "cardImage": "https://example.com/icons/fractures.png",
+    "tutorial_content": {
+      "headline": "First Aid for Fractures",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Immobilize the Injury",
+          "details": "If you suspect a fracture, do not move the injured person unless absolutely necessary. Immobilize the bone and the joints above and below the fracture. You can use a splint or firm objects to prevent movement.",
+          "image": "https://example.com/tutorials/fractures_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Call for Help",
+          "details": "Call emergency services immediately. Provide them with details of the injury and the person's condition. Do not try to reset the bone yourself.",
+          "image": "https://example.com/tutorials/fractures_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Control Bleeding and Treat for Shock",
+          "details": "If there is any bleeding from the wound, apply gentle pressure with a sterile dressing. Cover the person with a blanket to keep them warm and treat them for shock by keeping them calm.",
+          "image": "https://example.com/tutorials/fractures_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Avoid Food or Drink",
+          "details": "Do not give the person anything to eat or drink in case they need surgery. This could cause complications during the procedure.",
+          "image": "https://example.com/tutorials/fractures_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "heat_stroke",
+    "title": "Heat Stroke",
+    "description": "High body temperature due to heat exposure.",
+    "progress": 0,
+    "cardImage": "https://example.com/icons/heat_stroke.png",
+    "tutorial_content": {
+      "headline": "First Aid for Heat Stroke",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Move to a Cool Place",
+          "details": "Move the person immediately to a cooler environment, such as a shaded area or an air-conditioned room. Lay them down and elevate their feet slightly.",
+          "image": "https://example.com/tutorials/heat_stroke_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Cool the Person Down",
+          "details": "Loosen or remove their clothing. Apply cool, wet cloths or towels to their skin, especially to the neck, armpits, and groin. Use a fan to blow cool air over them. If possible, immerse them in a cool bath.",
+          "image": "https://example.com/tutorials/heat_stroke_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Give Fluids if Alert",
+          "details": "If the person is conscious and able to swallow, give them sips of water or a sports drink with electrolytes. Do not give them alcohol or caffeine.",
+          "image": "https://example.com/tutorials/heat_stroke_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Call Emergency Services",
+          "details": "Heat stroke is a medical emergency. Call emergency services immediately and inform them of the person's condition. Continue cooling them down until help arrives.",
+          "image": "https://example.com/tutorials/heat_stroke_step4.png"
+        }
+      ]
+    }
+  },
+  {
+    "id": "poisoning",
+    "title": "Poisoning",
+    "description": "Caused by ingesting harmful substances.",
+    "progress": 0,
+    "cardImage": "https://example.com/icons/poisoning.png",
+    "tutorial_content": {
+      "headline": "First Aid for Poisoning",
+      "steps": [
+        {
+          "step_number": 1,
+          "title": "Assess the Situation",
+          "details": "If the person is conscious, try to find out what they ingested and when. Look for a container or bottle. If they are unconscious or not breathing, call emergency services immediately.",
+          "image": "https://example.com/tutorials/poisoning_step1.png"
+        },
+        {
+          "step_number": 2,
+          "title": "Call a Poison Control Center",
+          "details": "Call the local poison control center or emergency services. They will provide specific instructions based on the substance. Do not induce vomiting unless specifically told to do so by a professional.",
+          "image": "https://example.com/tutorials/poisoning_step2.png"
+        },
+        {
+          "step_number": 3,
+          "title": "Do Not Give Food or Drink",
+          "details": "Unless instructed by poison control or emergency services, do not give the person anything to eat or drink. This can sometimes make the situation worse.",
+          "image": "https://example.com/tutorials/poisoning_step3.png"
+        },
+        {
+          "step_number": 4,
+          "title": "Bring the Container",
+          "details": "When help arrives, provide the container of the substance to the medical professionals. This will help them determine the correct course of treatment.",
+          "image": "https://example.com/tutorials/poisoning_step4.png"
+        }
+      ]
+    }
+  }
+]
